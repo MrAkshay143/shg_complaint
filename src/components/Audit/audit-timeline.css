@@ -1,0 +1,566 @@
+/* Audit Timeline - Professional Minimal Design */
+
+/* Timeline Container */
+.audit-timeline {
+  background: var(--surface);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+/* Timeline Header */
+.audit-timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.audit-timeline-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.audit-timeline-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin: 0.25rem 0 0 0;
+}
+
+.audit-timeline-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* Timeline Controls */
+.audit-timeline-controls {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--background);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+.audit-timeline-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.audit-timeline-filter-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.audit-timeline-filter-select,
+.audit-timeline-filter-input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: border-color 0.2s ease;
+}
+
+.audit-timeline-filter-select:focus,
+.audit-timeline-filter-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.audit-timeline-filter-select:hover,
+.audit-timeline-filter-input:hover {
+  border-color: var(--primary-color);
+}
+
+/* Timeline List */
+.audit-timeline-list {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.audit-timeline-list::before {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+  border-radius: 1px;
+}
+
+.audit-timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.audit-timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Timeline Dot */
+.audit-timeline-dot {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--surface);
+  z-index: 1;
+  transition: transform 0.2s ease;
+}
+
+.audit-timeline-dot.success {
+  background: var(--success-color);
+}
+
+.audit-timeline-dot.warning {
+  background: var(--warning-color);
+}
+
+.audit-timeline-dot.error {
+  background: var(--error-color);
+}
+
+.audit-timeline-dot.info {
+  background: var(--primary-color);
+}
+
+.audit-timeline-item:hover .audit-timeline-dot {
+  transform: scale(1.1);
+}
+
+/* Timeline Content */
+.audit-timeline-content {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.audit-timeline-item:hover .audit-timeline-content {
+  border-color: var(--primary-color);
+}
+
+/* Timeline Header */
+.audit-timeline-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.audit-timeline-item-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.audit-timeline-item-type {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.audit-timeline-item-time {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Timeline Description */
+.audit-timeline-description {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Timeline Details */
+.audit-timeline-details {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.audit-timeline-details-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.audit-timeline-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.audit-timeline-details-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.75rem;
+}
+
+.audit-timeline-details-item:last-child {
+  border-bottom: none;
+}
+
+.audit-timeline-details-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.audit-timeline-details-value {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.audit-timeline-details-value.changed {
+  background: var(--warning-color);
+  color: white;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.625rem;
+}
+
+/* Timeline User */
+.audit-timeline-user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.audit-timeline-user-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.audit-timeline-user-info {
+  flex: 1;
+}
+
+.audit-timeline-user-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.125rem 0;
+}
+
+.audit-timeline-user-role {
+  font-size: 0.625rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Timeline Actions */
+.audit-timeline-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.audit-timeline-action {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.audit-timeline-action:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background: rgba(37, 99, 235, 0.05);
+}
+
+/* Timeline Loading */
+.audit-timeline-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.audit-timeline-loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--border);
+  border-top: 2px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Timeline Empty */
+.audit-timeline-empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+}
+
+.audit-timeline-empty-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1rem auto;
+  opacity: 0.5;
+  color: var(--text-secondary);
+  font-size: 2rem;
+}
+
+.audit-timeline-empty-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.audit-timeline-empty-text {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Timeline Pagination */
+.audit-timeline-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.audit-timeline-page-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.audit-timeline-page-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background: rgba(37, 99, 235, 0.05);
+}
+
+.audit-timeline-page-btn.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.audit-timeline-page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.audit-timeline-page-info {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Compact Variant */
+.audit-timeline-content.compact {
+  padding: 0.75rem;
+}
+
+.audit-timeline-item-header.compact {
+  margin-bottom: 0.5rem;
+}
+
+.audit-timeline-item-title.compact {
+  font-size: 0.8125rem;
+}
+
+.audit-timeline-item-meta.compact {
+  font-size: 0.75rem;
+}
+
+.audit-timeline-item-time.compact {
+  font-size: 0.6875rem;
+}
+
+.audit-timeline-dot.compact {
+  width: 10px;
+  height: 10px;
+  left: -1.375rem;
+  top: 0.375rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .audit-timeline {
+    padding: 1rem;
+  }
+  
+  .audit-timeline-list {
+    padding-left: 1.5rem;
+  }
+  
+  .audit-timeline-list::before {
+    left: 0.5rem;
+  }
+  
+  .audit-timeline-dot {
+    left: -1.25rem;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .audit-timeline-content {
+    padding: 0.75rem;
+  }
+  
+  .audit-timeline-item-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .audit-timeline-controls {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .audit-timeline-pagination {
+    flex-wrap: wrap;
+  }
+  
+  .audit-timeline-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .audit-timeline-title {
+    font-size: 1rem;
+  }
+  
+  .audit-timeline-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .audit-timeline-action {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .audit-timeline-empty {
+    padding: 2rem;
+  }
+  
+  .audit-timeline-empty-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .audit-timeline-loading-spinner,
+  .audit-timeline-action,
+  .audit-timeline-page-btn,
+  .audit-timeline-content,
+  .audit-timeline-dot {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .audit-timeline-action:hover,
+  .audit-timeline-page-btn:hover,
+  .audit-timeline-content:hover,
+  .audit-timeline-dot:hover {
+    transform: none !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .audit-timeline {
+    border-width: 2px;
+  }
+  
+  .audit-timeline-content {
+    border-width: 2px;
+  }
+  
+  .audit-timeline-details {
+    border-width: 2px;
+  }
+  
+  .audit-timeline-action,
+  .audit-timeline-page-btn {
+    border-width: 2px;
+  }
+}

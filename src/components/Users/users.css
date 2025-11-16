@@ -1,0 +1,315 @@
+/* User Management - Compressed Professional Styles */
+
+.user-management-container {
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+:root.dark .user-management-container {
+  background: var(--color-surface-dark);
+  border-color: var(--color-border-dark);
+}
+
+.user-management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.user-management-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-management-subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.25rem;
+}
+
+.user-management-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.user-management-search {
+  margin-bottom: 1.5rem;
+}
+
+.user-management-table {
+  background: var(--color-surface);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+:root.dark .user-management-table {
+  background: var(--color-surface-dark);
+}
+
+.user-management-table th {
+  background: var(--color-surface-subtle);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+:root.dark .user-management-table th {
+  background: var(--color-surface-subtle-dark);
+  border-color: var(--color-border-dark);
+}
+
+.user-management-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  font-size: 0.875rem;
+}
+
+:root.dark .user-management-table td {
+  border-color: var(--color-border-dark);
+}
+
+.user-management-table tr:hover {
+  background: var(--color-surface-hover);
+}
+
+:root.dark .user-management-table tr:hover {
+  background: var(--color-surface-hover-dark);
+}
+
+/* Status Badges - Compressed */
+.user-status-active {
+  background: var(--color-success-600);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.user-status-inactive {
+  background: var(--color-error-600);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.user-role-admin {
+  background: var(--color-warning-600);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.user-role-executive {
+  background: var(--color-info-600);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.user-role-operator {
+  background: var(--color-success-600);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Dialog Styles - Compressed */
+.user-dialog {
+  background: var(--color-surface);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+:root.dark .user-dialog {
+  background: var(--color-surface-dark);
+  border-color: var(--color-border-dark);
+}
+
+.user-dialog-title {
+  background: var(--color-surface-subtle);
+  border-bottom: 1px solid var(--color-border);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  padding: 1rem;
+  font-size: 1.125rem;
+}
+
+:root.dark .user-dialog-title {
+  background: var(--color-surface-subtle-dark);
+  border-color: var(--color-border-dark);
+}
+
+.user-dialog-content {
+  padding: 1rem;
+}
+
+/* Form Sections - Compressed */
+.user-form-section {
+  margin-bottom: 1rem;
+}
+
+.user-form-section h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.user-form-field {
+  margin-bottom: 0.75rem;
+}
+
+.user-form-field label {
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 0.25rem;
+  display: block;
+  font-size: 0.875rem;
+}
+
+/* Permission Groups - Compressed */
+.user-permission-group {
+  background: var(--color-surface-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+:root.dark .user-permission-group {
+  background: var(--color-surface-subtle-dark);
+  border-color: var(--color-border-dark);
+}
+
+.user-permission-group h6 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.user-permission-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.user-permission-item:last-child {
+  border-bottom: none;
+}
+
+.user-permission-label {
+  font-size: 0.875rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.user-permission-description {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.25rem;
+}
+
+/* Action Buttons - Compressed */
+.user-action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+/* Tab Panel - Compressed */
+.user-tab-panel {
+  padding: 1rem 0;
+}
+
+/* Responsive Design - Compressed */
+@media (max-width: 768px) {
+  .user-management-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .user-management-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .user-management-table {
+    overflow-x: auto;
+  }
+  
+  .user-action-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .user-management-container {
+    padding: 1rem;
+  }
+  
+  .user-management-title {
+    font-size: 1.125rem;
+  }
+  
+  .user-dialog-content {
+    padding: 1rem;
+  }
+}
+
+/* Accessibility - Compressed */
+@media (prefers-reduced-motion: reduce) {
+  .user-management-container,
+  .user-management-table tr,
+  .user-dialog,
+  .user-permission-group {
+    transition: none !important;
+  }
+}
+
+/* High Contrast Mode - Compressed */
+@media (prefers-contrast: high) {
+  .user-management-container,
+  .user-dialog,
+  .user-permission-group {
+    border-width: 2px;
+  }
+  
+  .user-status-active,
+  .user-status-inactive,
+  .user-role-admin,
+  .user-role-executive,
+  .user-role-operator {
+    border: 2px solid currentColor;
+  }
+}
